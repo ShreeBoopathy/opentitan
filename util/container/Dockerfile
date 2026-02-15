@@ -169,7 +169,7 @@ USER root:root
 
 # Install bazel using bazelisk.
 RUN BAZELISK_PATH="/usr/local/bin/bazelisk"; \
-    BAZELISK_URL="https://github.com/bazelbuild/bazelisk/releases/download/${BAZELISK_VERSION}/bazelisk-linux-amd64"; \
+    BAZELISK_URL="https://github.com/bazelbuild/bazelisk/releases/download/${BAZELISK_VERSION}/bazelisk-linux-arm64"; \
     curl -L -o ${BAZELISK_PATH} ${BAZELISK_URL} && \
     chmod +x ${BAZELISK_PATH} && \
     ln -s ${BAZELISK_PATH} /usr/local/bin/bazel
